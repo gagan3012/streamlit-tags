@@ -1,4 +1,6 @@
 import os
+from typing import Tuple
+
 import streamlit.components.v1 as components
 
 # Create a _RELEASE constant. We'll set this to False while we're developing
@@ -77,18 +79,30 @@ def my_component(name, key=None):
     return component_value
 
 
+def st_custom_slider(label: str, min_value: int, max_value: int, key=None):
+    component_value = _component_func(label=label, minValue=min_value, maxValue=max_value, key=key)
+    return component_value
+
+
+# Define a new public method which takes as input a tuple of numbers to define a range slider, and returns back a tuple.
+def st_range_slider(label: str, min_value: int, max_value: int, value: Tuple[int, int], key=None) -> Tuple[int, int]:
+    component_value = _component_func(label=label, minValue=min_value, maxValue=max_value, initialValue=value, key=key,
+                                      default=value)
+    return tuple(component_value)
+
+
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/keywords.py`
 if not _RELEASE:
     import streamlit as st
 
-    st.subheader("Component with constant args")
+    # st.subheader("Component with constant args")
 
     # Create an instance of our component with a constant `name` arg, and
     # print its output value.
-    num_clicks = my_component("World")
-    st.markdown("You've clicked %s times!" % int(num_clicks))
+    # num_clicks = my_component("Gagan")
+    # st.markdown("You've clicked %s times!" % int(num_clicks))
 
     st.markdown("---")
     st.subheader("Component with variable args")
@@ -101,6 +115,14 @@ if not _RELEASE:
     # it is considered a new instance and will be re-mounted on the frontend
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
-    name_input = st.text_input("Enter a name", value="Streamlit")
-    num_clicks = my_component(name_input, key="foo")
-    st.markdown("You've clicked %s times!" % int(num_clicks))
+    # name_input = st.text_input("Enter a name", value="Streamlit")
+
+    v_custom = st_custom_slider('Hello world', 0, 100, 50)
+    st.write(v_custom)
+
+    # Add a range slider
+    v_custom_range = st_range_slider('Hello world', 0, 100, (20, 60), key="slider2")
+    st.write(v_custom_range)
+
+    # num_clicks = my_component(name_input, key="foo")
+    # st.markdown("You've clicked %s times!" % int(num_clicks))

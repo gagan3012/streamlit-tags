@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import MyComponent from "./keywords"
+import CustomSlider from "./keywords"
 
 ReactDOM.render(
   <React.StrictMode>
-    <MyComponent />
+    <CustomSlider />
   </React.StrictMode>,
   document.getElementById("root")
 )
