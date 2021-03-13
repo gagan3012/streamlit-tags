@@ -1,0 +1,24 @@
+html {
+    font-family: sans-serif;
+}
+
+.rti--container {
+  max-width: inherit;
+  --rti-tag: rgb(246, 51, 102);
+    background-color: #f8f9fa;
+}
+body{
+    color: #ffffff;
+}
+h3{
+    color: #000000
+}
+span{
+    color: #ffffff
+}
+button{
+    color: #ffffff
+}
+.rti--input{
+    background-color: #f8f9fa;
+}

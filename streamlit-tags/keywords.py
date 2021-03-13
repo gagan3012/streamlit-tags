@@ -49,6 +49,7 @@ def st_keywords(label: str, text: str, value: list, key=None) -> int:
     component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
     return component_value
 
+
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/keywords.py`
@@ -64,6 +65,5 @@ if not _RELEASE:
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
 
-    v_custom = st_keywords('Hello world', 'deep', ['ione'])
+    v_custom = st_keywords('Enter Keyword:', 'Press enter to add more', ['One', 'Two', 'Three'])
     st.write(v_custom)
-

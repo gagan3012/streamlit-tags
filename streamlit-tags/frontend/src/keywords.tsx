@@ -1,7 +1,7 @@
 import React,{ useEffect, useState }  from "react"
 import { ComponentProps, Streamlit, withStreamlitConnection } from "streamlit-component-lib"
 import { TagsInput } from "react-tag-input-component";
-
+import "./styles.css";
 
 /**
  * We can use a Typescript interface to destructure the arguments from Python
@@ -32,14 +32,13 @@ const Custom_keywords = (props: ComponentProps) => {
   useEffect(() => Streamlit.setFrameHeight())
   return (
     <div>
-      <h3>{label}</h3>
-      <TagsInput
+        <h3>{label}</h3>
+        <TagsInput
         value={value}
         onChange= {(value) =>  onSubmit(value) && setValue(value)}
         name={label}
         placeHolder={text}
       />
-      <p>{JSON.stringify(value)}</p>
     </div>
   )
 }
