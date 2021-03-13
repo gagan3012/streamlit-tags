@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { ComponentProps, Streamlit, withStreamlitConnection } from "streamlit-component-lib"
 import { Slider } from "baseui/slider"
+import { TagsInput } from "react-tag-input-component";
+
 
 /**
  * We can use a Typescript interface to destructure the arguments from Python
@@ -8,9 +10,8 @@ import { Slider } from "baseui/slider"
  */
 interface PythonArgs {
   label: string
-  minValue?: number
-  maxValue?: number
-  initialValue: number[]
+  text: string
+  initialValue: string[]
 }
 
 /**
@@ -21,22 +22,35 @@ interface PythonArgs {
 const CustomSlider = (props: ComponentProps) => {
   // Destructure using Typescript interface
   // This ensures typing validation for received props from Python
-  const { label, minValue, maxValue, initialValue }: PythonArgs = props.args
+  const { label, text, initialValue }: PythonArgs = props.args
   const [value, setValue] = useState(initialValue)
 
   useEffect(() => Streamlit.setFrameHeight())
-
   return (
-    <>
+
+
+   // <>
+   //   <h3>{label}</h3>
+   //   <Slider
+   //     value={value}
+    //    onChange={({ value }) => value && setValue(value)}
+     //   onFinalChange={({ value }) => Streamlit.setComponentValue(value)}
+     //   min={minValue}
+     //   max={maxValue}
+     // />
+    //</>
+  //)
+    <div>
       <h3>{label}</h3>
-      <Slider
+        <pre>{JSON.stringify(value)}</pre>
+      <TagsInput
         value={value}
-        onChange={({ value }) => value && setValue(value)}
-        onFinalChange={({ value }) => Streamlit.setComponentValue(value)}
-        min={minValue}
-        max={maxValue}
+        onChange= {setValue}
+        name={label}
+        placeHolder={text}
       />
-    </>
+      <em>press enter or comma to add new tag</em>
+    </div>
   )
 }
 
