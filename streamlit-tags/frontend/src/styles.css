@@ -4,7 +4,7 @@ html {
 
 .rti--container {
   max-width: inherit;
-  --rti-tag: rgb(246, 51, 102);
+  --rti-tag: rgb(246, 51, 102) !important;
     background-color: #f8f9fa;
 }
 body{
