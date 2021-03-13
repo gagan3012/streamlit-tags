@@ -2,6 +2,7 @@ import React,{ useEffect, useState }  from "react"
 import { ComponentProps, Streamlit, withStreamlitConnection } from "streamlit-component-lib"
 import { TagsInput } from "react-tag-input-component";
 
+
 /**
  * We can use a Typescript interface to destructure the arguments from Python
  * and validate the types of the input
@@ -23,15 +24,18 @@ const Custom_keywords = (props: ComponentProps) => {
   // This ensures typing validation for received props from Python
   const { label, text, initialValue }: PythonArgs = props.args
   const [value, setValue] = useState(initialValue)
-  //Streamlit.setComponentValue(value)
 
+  const onSubmit = (values: any) => {
+    Streamlit.setComponentValue(values)
+    return true
+  }
   useEffect(() => Streamlit.setFrameHeight())
   return (
     <div>
       <h3>{label}</h3>
       <TagsInput
         value={value}
-        onChange= {(value) =>  value && setValue(value)}
+        onChange= {(value) =>  onSubmit(value) && setValue(value)}
         name={label}
         placeHolder={text}
       />
@@ -39,6 +43,8 @@ const Custom_keywords = (props: ComponentProps) => {
     </div>
   )
 }
+
+
 
 
 /*
