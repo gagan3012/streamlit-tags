@@ -29,7 +29,6 @@ const CustomSlider = (props: ComponentProps) => {
   return (
     <div>
       <h3>{label}</h3>
-        <pre>{JSON.stringify(value)}</pre>
       <TagsInput
         value={value}
         onChange= {setValue}
