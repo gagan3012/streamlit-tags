@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { ComponentProps, Streamlit, withStreamlitConnection } from "streamlit-component-lib"
-import { Slider } from "baseui/slider"
 import { TagsInput } from "react-tag-input-component";
 
 
@@ -26,20 +25,8 @@ const CustomSlider = (props: ComponentProps) => {
   const [value, setValue] = useState(initialValue)
 
   useEffect(() => Streamlit.setFrameHeight())
+  console.log(JSON.stringify(value))
   return (
-
-
-   // <>
-   //   <h3>{label}</h3>
-   //   <Slider
-   //     value={value}
-    //    onChange={({ value }) => value && setValue(value)}
-     //   onFinalChange={({ value }) => Streamlit.setComponentValue(value)}
-     //   min={minValue}
-     //   max={maxValue}
-     // />
-    //</>
-  //)
     <div>
       <h3>{label}</h3>
         <pre>{JSON.stringify(value)}</pre>
