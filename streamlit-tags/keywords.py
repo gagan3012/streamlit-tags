@@ -1,6 +1,7 @@
 import os
 
 import streamlit.components.v1 as components
+import re
 
 # Create a _RELEASE constant. We'll set this to False while we're developing
 # the component, and True when we're ready to package and distribute it.
@@ -36,7 +37,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _component_func = components.declare_component("streamlit-tags", path=build_dir)
+    _component_func = components.declare_component("streamlit-keywords", path=build_dir)
 
 
 # Create a wrapper function for the component. This is an optional
@@ -48,13 +49,11 @@ def st_keywords(label: str, text: str, value: list, key=None) -> int:
     component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
     return component_value
 
-
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/keywords.py`
 if not _RELEASE:
     import streamlit as st
-
 
     # Create a second instance of our component whose `name` arg will vary
     # based on a text_input widget.
@@ -65,6 +64,6 @@ if not _RELEASE:
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
 
-    v_custom = st_keywords('Hello world', 'deep', ['ione','2'])
+    v_custom = st_keywords('Hello world', 'deep', ['ione'])
     st.write(v_custom)
 
