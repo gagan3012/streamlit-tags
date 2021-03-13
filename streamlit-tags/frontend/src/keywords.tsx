@@ -25,7 +25,7 @@ const CustomSlider = (props: ComponentProps) => {
   const [value, setValue] = useState(initialValue)
 
   useEffect(() => Streamlit.setFrameHeight())
-  console.log(JSON.stringify(value))
+    Streamlit.setComponentValue(value)
   return (
     <div>
       <h3>{label}</h3>

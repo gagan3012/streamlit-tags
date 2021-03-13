@@ -81,7 +81,7 @@ def my_component(name, key=None):
 
 def st_keywords_slider(label: str, text: str, value: str, key=None) -> int:
     component_value = _component_func(label=label, text=text, initialValue=[value], key=key, default=[value])
-    return component_value[0]
+    return component_value
 
 
 # Define a new public method which takes as input a tuple of numbers to define a range slider, and returns back a tuple.
@@ -117,7 +117,7 @@ if not _RELEASE:
     # "name" argument without having it get recreated.
     # name_input = st.text_input("Enter a name", value="Streamlit")
 
-    v_custom = st_keywords_slider('Hello world', 'add', 'one')
+    v_custom = st_keywords_slider('Hello world', 'deep', 'one')
     st.write(v_custom)
 
     # Add a range slider
