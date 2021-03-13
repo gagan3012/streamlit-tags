@@ -45,7 +45,7 @@ else:
 # `declare_component` and call it done. The wrapper allows us to customize
 # our component's API: we can pre-process its input args, post-process its
 # output value, and add a docstring for users.
-def st_keywords(label: str, text: str, value: list, key=None) -> int:
+def st_tags(label: str, text: str, value: list, key=None) -> int:
     component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
     return component_value
 
@@ -65,5 +65,5 @@ if not _RELEASE:
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
 
-    v_custom = st_keywords('Enter Keyword:', 'Press enter to add more', ['One', 'Two', 'Three'])
+    v_custom = st_tags('Enter Keyword:', 'Press enter to add more', ['One', 'Two', 'Three'])
     st.write(v_custom)
