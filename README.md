@@ -1,6 +1,7 @@
 # Streamlit-tags
 
 A custom component to have Tags in Streamlit.
+![image](https://github.com/gagan3012/streamlit-tags/blob/master/img/streamlit-app-2021-03-14-03-03-7.gif)
 
 ## Install
 
