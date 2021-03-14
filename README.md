@@ -23,6 +23,16 @@ def st_tags(label: str,
             text: str,
             value: list,
             key=None) -> list
+  '''
+
+    :param label: (Str) Label of the Function
+    :param text: (Str) Instructions for entry
+    :param value: (List) Initial Value
+    :param key: (Str)
+        An optional string to use as the unique key for the widget.
+        Assign a key so the component is not remount every time the script is rerun.
+    :return: (List) Tags
+    '''
 ```
 
 ## Example Usage
