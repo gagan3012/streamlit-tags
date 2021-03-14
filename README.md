@@ -3,13 +3,15 @@
 A custom component to have Tags in Streamlit.
 ![image](https://github.com/gagan3012/streamlit-tags/blob/master/img/streamlit-app-2021-03-14-03-03-7.gif)
 
+Please star the repo and share the usage if you liked it. 
+
 ## Install
 
 ```
 pip install streamlit-tags
 ```
 
-The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/)
+The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/) 
 
 ## Usage
 
