@@ -17,7 +17,7 @@ This library has one main function to display and use tags:
 
 - `st_tags` to display the tags feature
 
-Check the [`examples/`](https://github.com/gagan3012/streamlit-tags/tree/master/examples) folder of the project for a more thourough quick start.
+Check the [`examples/`](https://github.com/gagan3012/streamlit-tags/tree/master/examples) folder of the project for a more through quick start.
 
 ## Definition
 
