@@ -9,6 +9,8 @@ A custom component to have Tags in Streamlit.
 pip install streamlit-tags
 ```
 
+The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/)
+
 ## Usage
 
 This library has one main function to display and use tags:
