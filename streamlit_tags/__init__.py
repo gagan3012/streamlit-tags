@@ -65,7 +65,7 @@ def st_tags(label: str,
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/__init__.py`
-if not _RELEASE:
+if _RELEASE:
     import streamlit as st
 
     # Create a second instance of our component whose `name` arg will vary
@@ -76,6 +76,7 @@ if not _RELEASE:
     # it is considered a new instance and will be re-mounted on the frontend
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
+    keywords = st_tags('Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'])
 
-    v_custom = st_tags('Enter Keyword:', 'Press enter to add more', ['One', 'Two', 'Three'])
-    st.write(v_custom)
+    st.write("### Results:")
+    st.write(keywords)

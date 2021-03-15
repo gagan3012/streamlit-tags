@@ -22,12 +22,12 @@ interface PythonArgs {
 const Custom_keywords = (props: ComponentProps) => {
   // Destructure using Typescript interface
   // This ensures typing validation for received props from Python
-  const { label, text, initialValue }: PythonArgs = props.args
+  let { label, text, initialValue }: PythonArgs = props.args
   const [value, setValue] = useState(initialValue)
 
   const onSubmit = (values: any) => {
+    setValue(value)
     Streamlit.setComponentValue(values)
-    return true
   }
   useEffect(() => Streamlit.setFrameHeight())
   return (
@@ -35,7 +35,7 @@ const Custom_keywords = (props: ComponentProps) => {
         <h3>{label}</h3>
         <TagsInput
         value={value}
-        onChange= {(value) =>  onSubmit(value) && setValue(value)}
+        onChange= {(value) =>  onSubmit(value)}
         name={label}
         placeHolder={text}
       />
