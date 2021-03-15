@@ -25,7 +25,7 @@ const Custom_keywords = (props: ComponentProps) => {
   let { label, text, initialValue }: PythonArgs = props.args
   const [value, setValue] = useState(initialValue)
 
-  const onSubmit = (values: any) => {
+  const onSubmit = (values: string[]) => {
     setValue(value)
     Streamlit.setComponentValue(values)
   }
