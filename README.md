@@ -5,6 +5,8 @@ A custom component to have Tags in Streamlit.
 
 Please star the repo and share the usage if you liked it. 
 
+Try out a demo here: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
+
 ## Install
 
 ```
