@@ -65,7 +65,7 @@ def st_tags(label: str,
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/__init__.py`
-if _RELEASE:
+if not _RELEASE:
     import streamlit as st
 
     # Create a second instance of our component whose `name` arg will vary
