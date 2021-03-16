@@ -19,9 +19,10 @@ The installation can also be found on [**PyPi**](https://pypi.org/project/stream
 
 ## Usage
 
-This library has one main function to display and use tags:
+This library has two main functions to display and use tags:
 
 - `st_tags` to display the tags feature
+- `st_tags_sidebar` to display the tags in the sidebar
 
 Check the [`examples/`](https://github.com/gagan3012/streamlit-tags/tree/master/examples) folder of the project for a more through quick start.
 
