@@ -9,9 +9,11 @@ html {
 }
 body{
     color: #ffffff;
+    background-color: inherit !important;
 }
 h3{
-    color: #000000
+    color: #000000;
+    background-color: inherit;
 }
 span{
     color: #ffffff
