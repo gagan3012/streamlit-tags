@@ -1,6 +1,7 @@
 import os
 
 import streamlit.components.v1 as components
+import streamlit as st
 
 # Create a _RELEASE constant. We'll set this to False while we're developing
 # the component, and True when we're ready to package and distribute it.
@@ -76,6 +77,8 @@ def st_tags_sidebar(label: str,
         Assign a key so the component is not remount every time the script is rerun.
     :return: Tags
     '''
+    import streamlit as st
+
     with st.sidebar:
         component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
         return component_value
