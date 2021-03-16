@@ -62,6 +62,25 @@ def st_tags(label: str,
     return component_value
 
 
+def st_tags_sidebar(label: str,
+                    text: str,
+                    value: list,
+                    key=None) -> list:
+    '''
+
+    :param label: (Str) Label of the Function
+    :param text: (Str) Instructions for entry
+    :param value: (List) Initial Value
+    :param key: (Str)
+        An optional string to use as the unique key for the widget.
+        Assign a key so the component is not remount every time the script is rerun.
+    :return: Tags
+    '''
+    with st.sidebar:
+        component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
+        return component_value
+
+
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/__init__.py`
@@ -76,7 +95,12 @@ if not _RELEASE:
     # it is considered a new instance and will be re-mounted on the frontend
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
-    keywords = st_tags('Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'])
+    keywords = st_tags_sidebar('Enter Keywords:', 'Press enter for more', ['Zero', 'One', 'Two'], key="1")
 
     st.write("### Results:")
     st.write(keywords)
+
+    keyword = st_tags('Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'], key='2')
+
+    st.sidebar.write("### Results:")
+    st.sidebar.write(keyword)

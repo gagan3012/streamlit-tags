@@ -26,8 +26,8 @@ const Custom_keywords = (props: ComponentProps) => {
   const [value, setValue] = useState(initialValue)
 
   const onSubmit = (values: string[]) => {
-    setValue(value)
-    Streamlit.setComponentValue(values)
+    setValue(values)
+    Streamlit.setComponentValue((values))
   }
   useEffect(() => Streamlit.setFrameHeight())
   return (
