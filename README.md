@@ -44,6 +44,25 @@ def st_tags(label: str,
     '''
 ```
 
+### We also have a function now to embed the tags function to the sidebar:
+
+```python 
+def st_tags_sidebar(label: str,
+                    text: str,
+                    value: list,
+                    key=None) -> list:
+    '''
+
+    :param label: (Str) Label of the Function
+    :param text: (Str) Instructions for entry
+    :param value: (List) Initial Value
+    :param key: (Str)
+        An optional string to use as the unique key for the widget.
+        Assign a key so the component is not remount every time the script is rerun.
+    :return: Tags
+    '''
+```
+
 ## Example Usage
 
 ```python 
@@ -54,5 +73,10 @@ keywords = st_tags('Enter Keyword:', 'Press enter to add more', ['One', 'Two', '
 
 st.write(keywords)
 ```
-
+### UI for st_tags
 ![image](https://user-images.githubusercontent.com/49101362/111052896-56a83580-8470-11eb-9d70-6196757d9f85.png)
+
+
+### UI for st_tags_sidebar
+![image](https://user-images.githubusercontent.com/49101362/111333712-fab5fa80-8683-11eb-95a1-311205ea9605.png)
+
