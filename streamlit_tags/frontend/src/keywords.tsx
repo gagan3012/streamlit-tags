@@ -3,21 +3,11 @@ import { ComponentProps, Streamlit, withStreamlitConnection } from "streamlit-co
 import { TagsInput } from "react-tag-input-component";
 import "./styles.css";
 
-/**
- * We can use a Typescript interface to destructure the arguments from Python
- * and validate the types of the input
- */
 interface PythonArgs {
   label: string
   text: string
   initialValue: string[]
 }
-
-/**
- * No more props manipulation in the code.
- * We store props in state and pass value directly to underlying Slider
- * and then back to Streamlit.
- */
 
 const Custom_keywords = (props: ComponentProps) => {
   // Destructure using Typescript interface
