@@ -24,7 +24,9 @@ This library has two main functions to display and use tags:
 - `st_tags` to display the tags feature
 - `st_tags_sidebar` to display the tags in the sidebar
 
-Check the [`examples/`](https://github.com/gagan3012/streamlit-tags/tree/master/examples) folder of the project for a more through quick start.
+Check the [`examples/`](https://github.com/gagan3012/streamlit-tags/tree/master/examples) folder of the project a quick start.
+
+Check out demo here: https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py
 
 ## Definition
 
