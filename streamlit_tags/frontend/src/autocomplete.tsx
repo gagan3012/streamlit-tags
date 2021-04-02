@@ -1,5 +1,6 @@
 import React,{ useEffect, useState }  from "react"
 import { ComponentProps, Streamlit, withStreamlitConnection } from "streamlit-component-lib"
+import ReactTags from 'react-autocomplete-tag' // load ReactTags component
 import Autocomplete from 'react-autocomplete-tags'
 import "./styles.css";
 
