@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import Custom_keywords from "./keywords"
+import Auto_keywords from "./autocomplete"
 
 // Lots of import to define a Styletron engine and load the light theme of baseui
 // @ts-ignore

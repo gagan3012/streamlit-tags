@@ -1,19 +1,19 @@
 html {
-    font-family: sans-serif !important;
+    font-family: var(--font) !important;
 }
 
 .rti--container {
   max-width: inherit;
-  --rti-tag: rgb(246, 51, 102) !important;
-    background-color: #f8f9fa;
+  --rti-tag: var(--primary-color) !important;
+  background-color: var(--secondary-background-color);
 }
 body{
     color: #ffffff;
     background-color: inherit !important;
 }
 h3{
-    color: #000000;
-    background-color: inherit;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 span{
     color: #ffffff
@@ -22,5 +22,5 @@ button{
     color: #ffffff
 }
 .rti--input{
-    background-color: #f8f9fa;
+    background-color: var(--secondary-background-color);
 }

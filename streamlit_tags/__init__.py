@@ -59,6 +59,9 @@ def st_tags(label: str,
         Assign a key so the component is not remount every time the script is rerun.
     :return: Tags
     '''
+    import streamlit as st
+
+    st.write(label)
     component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
     return component_value
 
@@ -80,6 +83,7 @@ def st_tags_sidebar(label: str,
     import streamlit as st
 
     with st.sidebar:
+        st.write(label)
         component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
         return component_value
 
@@ -87,7 +91,7 @@ def st_tags_sidebar(label: str,
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/__init__.py`
-if not _RELEASE:
+if _RELEASE:
     import streamlit as st
 
     # Create a second instance of our component whose `name` arg will vary
@@ -98,12 +102,8 @@ if not _RELEASE:
     # it is considered a new instance and will be re-mounted on the frontend
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
-    keywords = st_tags_sidebar('Enter Keywords:', 'Press enter for more', ['Zero', 'One', 'Two'], key="1")
 
-    st.write("### Results:")
-    st.write(keywords)
-
-    keyword = st_tags('Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'], key='2')
+    keyword = st_tags('### Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'], key='2')
 
     st.sidebar.write("### Results:")
     st.sidebar.write(keyword)
