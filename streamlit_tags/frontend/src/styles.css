@@ -6,17 +6,20 @@ html {
   max-width: inherit;
   --rti-tag: var(--primary-color) !important;
   background-color: var(--secondary-background-color);
+  font: var(--font);
 }
 body{
     color: #ffffff;
     background-color: inherit !important;
+        font: var(--font);
 }
 h3{
     color: var(--text-color);
     background-color: var(--background-color);
 }
 span{
-    color: #ffffff
+    color: #ffffff;
+    font: var(--font);
 }
 button{
     color: #ffffff
