@@ -48,9 +48,11 @@ else:
 def st_tags(label: str,
             text: str,
             value: list,
+            suggestions: list,
             key=None) -> list:
     '''
 
+    :param suggestions:
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
     :param value: (List) Initial Value
@@ -62,13 +64,15 @@ def st_tags(label: str,
     import streamlit as st
 
     st.write(label)
-    component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
+    component_value = _component_func(label=label, text=text, initialValue=value, suggestions=suggestions, key=key,
+                                      default=value)
     return component_value
 
 
 def st_tags_sidebar(label: str,
                     text: str,
                     value: list,
+                    suggestions: list,
                     key=None) -> list:
     '''
 
@@ -84,7 +88,8 @@ def st_tags_sidebar(label: str,
 
     with st.sidebar:
         st.write(label)
-        component_value = _component_func(label=label, text=text, initialValue=value, key=key, default=value)
+        component_value = _component_func(label=label, text=text, initialValue=value, suggestions=suggestions, key=key,
+                                          default=value)
         return component_value
 
 
@@ -103,7 +108,7 @@ if _RELEASE:
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
 
-    keyword = st_tags('### Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'], key='2')
+    keyword = st_tags('# Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'], ['three', 'lol'],key='2')
 
     st.sidebar.write("### Results:")
     st.sidebar.write(keyword)
