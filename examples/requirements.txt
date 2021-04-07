@@ -1,0 +1,2 @@
+streamlit==0.79.0
+streamlit_tags
