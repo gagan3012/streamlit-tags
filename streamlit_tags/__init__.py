@@ -48,7 +48,7 @@ else:
 def st_tags(label: str,
             text: str,
             value: list,
-            suggestions: list,
+            suggestions: list = [],
             key=None) -> list:
     '''
 
@@ -72,7 +72,7 @@ def st_tags(label: str,
 def st_tags_sidebar(label: str,
                     text: str,
                     value: list,
-                    suggestions: list,
+                    suggestions: list = [],
                     key=None) -> list:
     '''
 
