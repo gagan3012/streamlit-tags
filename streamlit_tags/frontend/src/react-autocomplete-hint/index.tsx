@@ -257,7 +257,7 @@ export const Hint: React.FC<IHintProps> = props => {
                                     borderColor: 'transparent',
                                     boxSizing: 'border-box',
                                     boxShadow: 'none',
-                                    color: 'rgba(0, 0, 0, 0.5)',
+                                    color: 'rgba(0, 0, 0, 0.35)',
                                     position: 'absolute',
                                     top: 0,
                                     left: 0,
@@ -286,7 +286,7 @@ export const Hint: React.FC<IHintProps> = props => {
                                         boxShadow: 'none',
                                         padding: 0,
                                         margin: 0,
-                                        color: 'rgba(0, 0, 0, 0.30)',
+                                        color: 'rgba(0, 0, 0, 0.50)',
                                         caretColor: 'transparent'
                                     }}
                                     defaultValue={hint}
