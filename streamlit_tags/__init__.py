@@ -88,7 +88,7 @@ def st_tags_sidebar(label: str,
     import streamlit as st
 
     with st.sidebar:
-        st.write(label)
+        st.sidebar.write(label)
         component_value = _component_func(label=label, text=text, initialValue=value, suggestions=suggestions, key=key,
                                           default=value)
         return component_value
