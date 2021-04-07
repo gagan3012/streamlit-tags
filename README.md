@@ -9,13 +9,6 @@ Try out a demo here: [![Streamlit App](https://static.streamlit.io/badges/stream
 
 Check out docs here: 
 
-## Updates
-
-Now streamlit tags also supports theming and all the colours 
-
-![image](https://user-images.githubusercontent.com/49101362/113494082-df554700-94ed-11eb-8c0a-bbbec64ee4c2.png)
-
-
 ## Install
 
 ```
