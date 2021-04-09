@@ -3,12 +3,20 @@ from streamlit_tags import st_tags, st_tags_sidebar
 
 st.write("# Code for streamlit tags")
 
-with st.echo():
-    keywords = st_tags(label='# Enter Keywords:',
-                       text='Press enter to add more',
-                       value=['Zero', 'One', 'Two'],
-                       suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-                       key='1')
+st.code(body='''keywords = st_tags(
+    label='# Enter Keywords:',
+    text='Press enter to add more',
+    value=['Zero', 'One', 'Two'],
+    suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+    key='1')''',
+                language="python")
+
+keywords = st_tags(
+    label='# Enter Keywords:',
+    text='Press enter to add more',
+    value=['Zero', 'One', 'Two'],
+    suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+    key='1')
 
 st.write("### Results:")
 st.write(keywords)
@@ -16,10 +24,12 @@ st.write(keywords)
 st.sidebar.write("# Code for streamlit tags sidebar")
 
 st.sidebar.code(body='''keyword = st_tags_sidebar(
-    label='# Enter Keywords:',
-    text='Press enter to add more',
-    value=['Zero', 'One', 'Two'],
-    suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'])''',
+label='# Enter Keywords:',
+text='Press enter to add more',
+value=['Zero', 'One', 'Two'],
+suggestions=['five', 'six', 'seven', 
+'eight', 'nine', 'three', 
+'eleven', 'ten', 'four'])''',
                 language="python")
 
 keyword = st_tags_sidebar(label='# Enter Keywords:',
