@@ -86,3 +86,6 @@ keyword = st_tags_sidebar(label='# Enter Keywords:',
                           suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'])
 ```
 
+## Sample Images:
+![image](https://user-images.githubusercontent.com/49101362/113942909-59494100-980a-11eb-8f4c-662f5c18d967.png)
+
