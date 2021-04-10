@@ -115,12 +115,12 @@ export const TagsInput = ({
 
       <Hint options={suggestions} allowTabFill={true}>
           <input
-        className={cc("rti--input", RTIInput)}
-        type="text"
-        name={name}
-        placeholder={placeHolder}
-        onKeyDown={handleOnKeyUp}
-        onBlur={onBlur}
+              className={cc("rti--input", RTIInput)}
+              type="text"
+              name={name}
+              placeholder={placeHolder}
+              onKeyDown={handleOnKeyUp}
+              onBlur={onBlur}
       />
     </Hint>
     </div>
