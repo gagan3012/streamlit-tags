@@ -1,7 +1,7 @@
 # Streamlit-tags
 
 A custom component to have Tags in Streamlit.
-![image](https://github.com/gagan3012/streamlit-tags/blob/master/img/streamlit-app-2021-03-14-03-03-7.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/49101362/114277814-83cb1200-9a35-11eb-8761-9d8bb81ffadc.gif)
 
 Please star the repo and share the usage if you liked it. 
 
