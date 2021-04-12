@@ -15,11 +15,22 @@ Check out docs here: https://streamlit-tags.readthedocs.io/en/latest/
 
 ## Install
 
+### PyPi
+
 ```
 pip install streamlit-tags
 ```
 
 The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/) 
+
+### Conda
+
+```
+pip install -i https://pypi.anaconda.org/gagan3012/simple streamlit-tags
+
+```
+
+The installation can also be found on [**Anaconda**](https://anaconda.org/gagan3012/streamlit-tags) 
 
 ## Usage
 
