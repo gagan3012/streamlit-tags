@@ -26,7 +26,7 @@ The installation can also be found on [**PyPi**](https://pypi.org/project/stream
 ### Conda
 
 ```
-pip install -i https://pypi.anaconda.org/gagan3012/simple streamlit-tags
+conda install -c gagan3012 streamlit-tags
 ```
 
 The installation can also be found on [**Anaconda**](https://anaconda.org/gagan3012/streamlit-tags) 
