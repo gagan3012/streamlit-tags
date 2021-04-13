@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/83/d9/bdf362c3871cbc6a76f4e0ef7bf46a202c1951efc8d5c51c08054c727c88/streamlit_tags-1.1.5.tar.gz
-  sha256: 98e85c687a1aa4525c83139598e9a6d943d577072fd92e78d734039a4da7b368
+  sha256: 7953dccd65e523848c088f70039c0a57aa3e4e8ade94506aba32a6ef729af307
 
 build:
   noarch: python
