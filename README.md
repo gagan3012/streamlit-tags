@@ -23,7 +23,7 @@ pip install streamlit-tags
 
 The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/) 
 
-### Conda
+### Anaconda
 
 ```
 conda install -c gagan3012 streamlit-tags
