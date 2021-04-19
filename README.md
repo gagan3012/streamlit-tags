@@ -63,6 +63,7 @@ def st_tags(label: str,
     
     '''
 ```
+Note: the suggestion feild is optional
 
 ### We also have a function now to embed the tags function to the sidebar:
 
@@ -84,6 +85,8 @@ def st_tags_sidebar(label: str,
     :return: Tags
     '''
 ```
+Note: the suggestion feild is optional
+
 
 ## Example Usage
 
