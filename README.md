@@ -1,4 +1,10 @@
 # Streamlit-tags
+[![pypi Version](https://img.shields.io/pypi/v/streamlit-tags.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/streamlit-tags/)
+[![conda Version](https://img.shields.io/conda/vn/gagan3012/streamlit-tags.svg?style=flat-square&logo=conda-forge&logoColor=white)](https://anaconda.org/gagan3012/streamlit-tags)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
+<br />
+[![PyPi downloads](https://static.pepy.tech/personalized-badge/streamlit-tags?period=total&units=international_system&left_color=grey&right_color=orange&left_text=pip%20downloads)](https://pypi.org/project/streamlit-tags/)
+[![Conda downloads](https://img.shields.io/conda/dn/gagan3012/streamlit-tags?label=conda%20downloads)](https://anaconda.orggagan3012/streamlit-tags)
 
 A custom component to have Tags in Streamlit.
 
