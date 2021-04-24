@@ -67,7 +67,7 @@ def st_tags(label: str,
     
     '''
 ```
-Note: the suggestion and value field is optional
+Note: the suggestion and value fields are optional
 
 ### We also have a function now to embed the tags function to the sidebar:
 
