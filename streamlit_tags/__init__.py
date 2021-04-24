@@ -46,10 +46,10 @@ else:
 # `declare_component` and call it done. The wrapper allows us to customize
 # our component's API: we can pre-process its input args, post-process its
 # output value, and add a docstring for users.
-def st_tags(label: str = "# Enter Keywords",
-            text: str = "Press enter to add more",
-            value: list = [],
+def st_tags(value: list = [],
             suggestions: list = [],
+            label: str = "# Enter Keywords",
+            text: str = "Press enter to add more",
             key=None) -> list:
     '''
 
@@ -70,10 +70,10 @@ def st_tags(label: str = "# Enter Keywords",
     return component_value
 
 
-def st_tags_sidebar(label: str = "# Enter Keywords",
-                    text: str = "Press enter to add more",
-                    value: list = [],
+def st_tags_sidebar(value: list = [],
                     suggestions: list = [],
+                    label: str = "# Enter Keywords",
+                    text: str = "Press enter to add more",
                     key=None) -> list:
     '''
 
