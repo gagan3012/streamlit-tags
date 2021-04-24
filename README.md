@@ -89,7 +89,7 @@ def st_tags_sidebar(label: str,
     :return: Tags
     '''
 ```
-Note: the suggestion field is optional
+Note: the suggestion and value fields are optional
 
 
 ## Example Usage
