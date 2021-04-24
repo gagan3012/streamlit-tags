@@ -1,7 +1,7 @@
 # Streamlit-tags
 [![pypi Version](https://img.shields.io/pypi/v/streamlit-tags.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/streamlit-tags/)
 [![conda Version](https://img.shields.io/conda/vn/gagan3012/streamlit-tags.svg?style=flat-square&logo=conda-forge&logoColor=white)](https://anaconda.org/gagan3012/streamlit-tags)
-[![PyPi downloads](https://static.pepy.tech/personalized-badge/streamlit-tags?period=total&units=international_system&left_color=grey&right_color=orange&left_text=pip%20downloads)](https://pypi.org/project/streamlit-tags/)
+[![Pip Downloads](https://static.pepy.tech/personalized-badge/streamlit-tags?period=total&units=none&left_color=black&right_color=blue&left_text=Pip%20Downloads)](https://pepy.tech/project/streamlit-tags)
 [![Conda downloads](https://img.shields.io/conda/dn/gagan3012/streamlit-tags?label=conda%20downloads)](https://anaconda.orggagan3012/streamlit-tags)
 
 
