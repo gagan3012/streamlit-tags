@@ -10,7 +10,10 @@ A custom component to add Tags in Streamlit.
 [![gif](https://user-images.githubusercontent.com/49101362/114277814-83cb1200-9a35-11eb-8761-9d8bb81ffadc.gif)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
 
 
-Please star⭐ the repo and share the usage if you liked it. 
+
+### 📢 Favour:
+It would be highly motivating, if you can STAR⭐ this repo if you find it helpful.
+
 
 Try out a demo here: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
 
