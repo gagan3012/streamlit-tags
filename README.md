@@ -7,7 +7,9 @@
 
 A custom component to add Tags in Streamlit.
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/49101362/114277814-83cb1200-9a35-11eb-8761-9d8bb81ffadc.gif)
+![gif](https://user-images.githubusercontent.com/49101362/114277814-83cb1200-9a35-11eb-8761-9d8bb81ffadc.gif)
+
+
 Please star⭐ the repo and share the usage if you liked it. 
 
 Try out a demo here: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
