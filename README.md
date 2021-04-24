@@ -82,7 +82,7 @@ def st_tags_sidebar(label: str,
     :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
-    :param value: (List) Initial Value
+    :param value: (List) Initial Value (
     :param key: (Str)
         An optional string to use as the unique key for the widget.
         Assign a key so the component is not remount every time the script is rerun.
