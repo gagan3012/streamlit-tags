@@ -89,8 +89,6 @@ def st_tags_sidebar(label: str,
         An optional string to use as the unique key for the widget.
         Assign a key so the component is not remount every time the script is rerun.
     :return: Tags
-
-    Note: usage also supports keywords = st_tags_sidebar()
     '''
 ```
 #### Note:
