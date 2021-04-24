@@ -1,2 +1,4 @@
-streamlit==0.79.0
+streamlit
 streamlit_tags
+pyarrow
+

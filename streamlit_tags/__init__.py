@@ -2,6 +2,7 @@ import os
 
 import streamlit.components.v1 as components
 import streamlit as st
+import pyarrow
 
 # Create a _RELEASE constant. We'll set this to False while we're developing
 # the component, and True when we're ready to package and distribute it.
@@ -47,7 +48,7 @@ else:
 # output value, and add a docstring for users.
 def st_tags(label: str,
             text: str,
-            value: list,
+            value: list = [],
             suggestions: list = [],
             key=None) -> list:
     '''
@@ -71,7 +72,7 @@ def st_tags(label: str,
 
 def st_tags_sidebar(label: str,
                     text: str,
-                    value: list,
+                    value: list = [],
                     suggestions: list = [],
                     key=None) -> list:
     '''
@@ -109,7 +110,7 @@ if _RELEASE:
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
 
-    keyword = st_tags('# Enter Keywords:', 'Press enter to add more', ['Zero', 'One', 'Two'], ['three', 'lol'],key='2')
+    keyword = st_tags('# Enter Keywords:', 'Press enter to add more',key='2')
 
     st.sidebar.write("### Results:")
     st.sidebar.write(keyword)
