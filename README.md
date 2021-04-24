@@ -93,7 +93,7 @@ def st_tags_sidebar(label: str,
 ```
 #### Note:
 - The suggestion and value fields are optional
-- Usage also supports keywords = st_tags_sidebar()
+- Usage also supports `keywords = st_tags_sidebar()`
 
 
 ## Example Usage
