@@ -52,7 +52,7 @@ Check out demo here: https://share.streamlit.io/gagan3012/streamlit-tags/example
 def st_tags(label: str,
             text: str,
             value: list,
-            suggestions: list = [],
+            suggestions: list,
             key=None) -> list:
     '''
 
@@ -67,7 +67,7 @@ def st_tags(label: str,
     
     '''
 ```
-Note: the suggestion field is optional
+Note: the suggestion and value field is optional
 
 ### We also have a function now to embed the tags function to the sidebar:
 
