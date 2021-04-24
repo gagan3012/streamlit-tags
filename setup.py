@@ -10,7 +10,7 @@ def readme() -> str:
     a raw string in below.
     :return: content of README.md
     """
-    return open(join(dirname(__file__), "README.md")).read()
+    return open(join(dirname(__file__), "README.md"), encoding="utf8").read()
 
 
 setuptools.setup(
