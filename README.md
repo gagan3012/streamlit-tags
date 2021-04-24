@@ -56,7 +56,7 @@ def st_tags(label: str,
             key=None) -> list:
     '''
 
-    :param suggestions: (List) List of possible suggestions
+    :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
     :param value: (List) Initial Value
