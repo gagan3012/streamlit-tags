@@ -8,7 +8,7 @@ st.code(body='''keywords = st_tags(
     text='Press enter to add more',
     value=['Zero', 'One', 'Two'],
     suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-    maxtags = 4
+    maxtags = 4,
     key='1')''',
         language="python")
 
