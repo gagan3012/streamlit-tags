@@ -95,10 +95,14 @@ keywords = st_tags(label='# Enter Keywords:',
                    suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
                    key='1')
                    
-keyword = st_tags_sidebar(label='# Enter Keywords:',
-                          text='Press enter to add more',
-                          value=['Zero', 'One', 'Two'],
-                          suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'])
+keyword = st_tags_sidebar(
+label='# Enter Keywords:',
+text='Press enter to add more',
+value=['Zero', 'One', 'Two'],
+suggestions=['five', 'six', 'seven', 
+             'eight', 'nine', 'three', 
+             'eleven', 'ten', 'four'],
+maxtags = 4)
 ```
 ## Sample Images of the UI:
 [![UI](https://user-images.githubusercontent.com/49101362/113942909-59494100-980a-11eb-8f4c-662f5c18d967.png)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
