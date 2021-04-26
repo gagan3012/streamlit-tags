@@ -50,6 +50,7 @@ def st_tags(value: list = [],
             suggestions: list = [],
             label: str = "# Enter Keywords",
             text: str = "Press enter to add more",
+            maxTags: int = -1,
             key=None) -> list:
     '''
 
@@ -65,7 +66,12 @@ def st_tags(value: list = [],
     import streamlit as st
 
     st.write(label)
-    component_value = _component_func(label=label, text=text, initialValue=value, suggestions=suggestions, key=key,
+    component_value = _component_func(label=label,
+                                      text=text,
+                                      initialValue=value,
+                                      suggestions=suggestions,
+                                      maxTags=maxTags,
+                                      key=key,
                                       default=value)
     return component_value
 

@@ -8,12 +8,13 @@ interface PythonArgs {
   text: string
   initialValue: string[]
   suggestions: string[]
+  maxTags: number
 }
 
 const Custom_keywords = (props: ComponentProps) => {
   // Destructure using Typescript interface
   // This ensures typing validation for received props from Python
-  let { label, text, initialValue, suggestions}: PythonArgs = props.args
+  let { label, text, initialValue, suggestions, maxTags}: PythonArgs = props.args
   const [value, setValue] = useState(initialValue)
 
   const onSubmit = (values: string[]) => {
@@ -29,6 +30,7 @@ const Custom_keywords = (props: ComponentProps) => {
         name={label}
         placeHolder={text}
         suggestions={suggestions}
+        maxTags={maxTags}
       />
     </div>
   )
