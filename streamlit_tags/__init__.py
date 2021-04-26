@@ -54,7 +54,7 @@ def st_tags(value: list = [],
             key=None) -> list:
     '''
 
-    :param maxTags:
+    :param maxTags: Maximum number of tags allowed
     :param suggestions: (List) List of possible suggestions
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
