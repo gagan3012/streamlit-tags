@@ -15,14 +15,14 @@ export interface IHintOption {
 export interface TagsInputProps {
   name?: string;
   placeHolder?: string;
-  value?: string[];
+  value: string[];
   onChange?: (tags: string[]) => void;
   suggestions: Array<string> | Array<IHintOption>;
   onBlur?: any;
   separators?: string[];
   onExisting?: (tag: string) => void;
   onRemoved?: (tag: string) => void;
-  maxTags?: int;
+  maxTags: number;
 }
 
 // initialize goober once
@@ -94,6 +94,7 @@ export const TagsInput = ({
     if (e.key === "Backspace" && tags.length && !text) {
       setTags(tags.slice(0, -1));
     }
+
     if (maxTags >= 0) {
       let remainingLimit = Math.max(maxTags - value.length, 0)
       setTags(tags.slice(0, remainingLimit));
