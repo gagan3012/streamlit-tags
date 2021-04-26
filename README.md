@@ -38,13 +38,14 @@ Check the [`examples/`](https://github.com/gagan3012/streamlit-tags/tree/master/
 Check out demo here: https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py
 ## Definition
 ```python
-def st_tags(label: str,
-            text: str,
-            value: list,
+def st_tags(value: list,
             suggestions: list,
+            label: str,
+            text: str,
+            maxtags: int,
             key=None) -> list:
     '''
-    :param maxTags: Maximum number of tags allowed
+    :param maxTags: Maximum number of tags allowed maxtags = -1
     :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
