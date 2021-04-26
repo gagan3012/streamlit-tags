@@ -68,7 +68,7 @@ Note: the suggestion and value fields are optional
 ```python 
 def st_tags_sidebar(value: list,
                     suggestions: list,
-            label: str,
+                    label: str,
             text: str,
             maxtags: int,
                     key=None) -> list:
