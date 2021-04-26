@@ -62,6 +62,7 @@ Note: the suggestion and value fields are optional
 #### Note:
 - The suggestion and value fields are optional
 - Usage also supports `keywords = st_tags()`
+- Upgrade to 1.1.9 for being able to control number of tags 
 
 ### We also have a function now to embed the tags function to the sidebar:
 
