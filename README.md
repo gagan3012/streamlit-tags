@@ -45,7 +45,7 @@ def st_tags(value: list,
             maxtags: int,
             key=None) -> list:
     '''
-    :param maxTags: Maximum number of tags allowed maxtags = -1
+    :param maxTags: Maximum number of tags allowed maxtags = -1 for unlimited entries
     :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
@@ -66,13 +66,14 @@ Note: the suggestion and value fields are optional
 ### We also have a function now to embed the tags function to the sidebar:
 
 ```python 
-def st_tags_sidebar(label: str,
-                    text: str,
-                    value: list,
+def st_tags_sidebar(value: list,
                     suggestions: list,
+            label: str,
+            text: str,
+            maxtags: int,
                     key=None) -> list:
     '''
-    :param maxTags: Maximum number of tags allowed
+    :param maxTags: Maximum number of tags allowed maxtags = -1 for unlimited entries
     :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
