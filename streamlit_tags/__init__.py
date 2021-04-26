@@ -50,10 +50,11 @@ def st_tags(value: list = [],
             suggestions: list = [],
             label: str = "# Enter Keywords",
             text: str = "Press enter to add more",
-            maxTags: int = -1,
+            maxtags: int = -1,
             key=None) -> list:
     '''
 
+    :param maxTags:
     :param suggestions: (List) List of possible suggestions
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
@@ -70,7 +71,7 @@ def st_tags(value: list = [],
                                       text=text,
                                       initialValue=value,
                                       suggestions=suggestions,
-                                      maxTags=maxTags,
+                                      maxTags=maxtags,
                                       key=key,
                                       default=value)
     return component_value
@@ -116,7 +117,11 @@ if _RELEASE:
     # and lose its current state. In this case, we want to vary the component's
     # "name" argument without having it get recreated.
 
-    keyword = st_tags('# Enter Keywords:', 'Press enter to add more', key='2')
+    keyword = st_tags(label='# Enter Keywords:',
+                      text='Press enter to add more',
+                      value=['Zero', 'One', 'Two'],
+                      suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+                      key='2')
 
     st.sidebar.write("### Results:")
     st.sidebar.write(keyword)
