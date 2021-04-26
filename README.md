@@ -102,7 +102,7 @@ keywords = st_tags(
 keyword = st_tags_sidebar(
     label='# Enter Keywords:',
     text='Press enter to add more',
-value=['Zero', 'One', 'Two'],
+    value=['Zero', 'One', 'Two'],
 suggestions=['five', 'six', 'seven', 
              'eight', 'nine', 'three', 
              'eleven', 'ten', 'four'],
