@@ -44,6 +44,7 @@ def st_tags(label: str,
             suggestions: list,
             key=None) -> list:
     '''
+    :param maxTags: Maximum number of tags allowed
     :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
@@ -70,6 +71,7 @@ def st_tags_sidebar(label: str,
                     suggestions: list,
                     key=None) -> list:
     '''
+    :param maxTags: Maximum number of tags allowed
     :param suggestions: (List) List of possible suggestions (optional)
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
