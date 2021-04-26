@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import cc from "./classnames";
 import Tag from "./tag";
 import {Hint} from "../react-autocomplete-hint";
-import {Input} from 'baseui/input';
 
 
 
@@ -20,9 +19,10 @@ export interface TagsInputProps {
   onChange?: (tags: string[]) => void;
   suggestions: Array<string> | Array<IHintOption>;
   onBlur?: any;
-  seprators?: string[];
+  separators?: string[];
   onExisting?: (tag: string) => void;
   onRemoved?: (tag: string) => void;
+  maxTags?: int;
 }
 
 // initialize goober once
@@ -74,10 +74,11 @@ export const TagsInput = ({
   value,
   onChange,
   onBlur,
-  seprators,
+  separators,
   onExisting,
   onRemoved,
-  suggestions
+  suggestions,
+  maxTags
 }: TagsInputProps) => {
   const [tags, setTags] = useState(value || []);
 
@@ -93,8 +94,12 @@ export const TagsInput = ({
     if (e.key === "Backspace" && tags.length && !text) {
       setTags(tags.slice(0, -1));
     }
+    if (maxTags >= 0) {
+      let remainingLimit = Math.max(maxTags - value.length, 0)
+      setTags(tags.slice(0, remainingLimit));
+    }
 
-    if (text && (seprators || defaultSeprators).includes(e.key)) {
+    if (text && (separators || defaultSeprators).includes(e.key)) {
       if (tags.includes(text)) {
         onExisting && onExisting(text);
         return;
