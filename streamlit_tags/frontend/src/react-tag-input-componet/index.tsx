@@ -80,11 +80,16 @@ export const TagsInput = ({
   suggestions,
   maxTags
 }: TagsInputProps) => {
-  const [tags, setTags] = useState(value || []);
+  let [tags, setTags] = useState(value || []);
 
   useEffect(() => {
     onChange && onChange(tags);
   }, [tags]);
+
+  if (maxTags >= 0) {
+      let remainingLimit = Math.max(maxTags, 0)
+      tags = tags.slice(0, remainingLimit)
+  }
 
   const handleOnKeyUp = (e) => {
     e.stopPropagation();
@@ -95,10 +100,6 @@ export const TagsInput = ({
       setTags(tags.slice(0, -1));
     }
 
-    if (maxTags >= 0) {
-      let remainingLimit = Math.max(maxTags - value.length, 0)
-      setTags(tags.slice(0, remainingLimit));
-    }
 
     if (text && (separators || defaultSeprators).includes(e.key)) {
       if (tags.includes(text)) {
