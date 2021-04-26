@@ -88,6 +88,8 @@ def st_tags_sidebar(value: list,
 #### Note:
 - The suggestion and value fields are optional
 - Usage also supports `keywords = st_tags_sidebar()`
+- Upgrade to 1.1.9 for being able to control number of tags 
+
 ## Example Usage
 ```python 
 keywords = st_tags(
