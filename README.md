@@ -70,7 +70,7 @@ def st_tags_sidebar(value: list,
                     suggestions: list,
                     label: str,
                     text: str,
-            maxtags: int,
+                    maxtags: int,
                     key=None) -> list:
     '''
     :param maxTags: Maximum number of tags allowed maxtags = -1 for unlimited entries
