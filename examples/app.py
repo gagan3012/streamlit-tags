@@ -12,7 +12,7 @@ st.code(body='''keywords = st_tags(
     key='1')''',
         language="python")
 
-maxtags = st.slider('Number of tags allowed?', 3, 10, 1)
+maxtags = st.slider('Number of tags allowed?', 3, 10, 1, key='1')
 
 keywords = st_tags(
     label='# Enter Keywords:',
@@ -33,13 +33,18 @@ text='Press enter to add more',
 value=['Zero', 'One', 'Two'],
 suggestions=['five', 'six', 'seven', 
 'eight', 'nine', 'three', 
-'eleven', 'ten', 'four'])''',
+'eleven', 'ten', 'four'],
+maxtags = 4)''',
                 language="python")
+
+maxtags_sidebar = st.sidebar.slider('Number of tags allowed?', 3, 10, 1, key='2')
+
 
 keyword = st_tags_sidebar(label='# Enter Keywords:',
                           text='Press enter to add more',
                           value=['Zero', 'One', 'Two'],
                           suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+                          maxtags=maxtags_sidebar,
                           key='2')
 
 st.sidebar.write("### Results:")

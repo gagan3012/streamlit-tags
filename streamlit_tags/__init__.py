@@ -81,9 +81,11 @@ def st_tags_sidebar(value: list = [],
                     suggestions: list = [],
                     label: str = "# Enter Keywords",
                     text: str = "Press enter to add more",
+                    maxtags: int = -1,
                     key=None) -> list:
     '''
 
+    :param maxtags:
     :param suggestions: (List) List of possible suggestions
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
@@ -99,7 +101,10 @@ def st_tags_sidebar(value: list = [],
         st.sidebar.write(label)
         component_value = _component_func(label=label,
                                           text=text,
-                                          initialValue=value, suggestions=suggestions, key=key,
+                                          initialValue=value,
+                                          suggestions=suggestions,
+                                          maxTags=maxtags,
+                                          key=key,
                                           default=value)
         return component_value
 
