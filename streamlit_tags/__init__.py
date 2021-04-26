@@ -54,7 +54,7 @@ def st_tags(value: list = [],
             key=None) -> list:
     '''
 
-    :param maxTags: Maximum number of tags allowed
+    :param maxTags: Maximum number of tags allowed maxtags = -1 for unlimited entries
     :param suggestions: (List) List of possible suggestions
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
@@ -85,7 +85,7 @@ def st_tags_sidebar(value: list = [],
                     key=None) -> list:
     '''
 
-    :param maxtags: Maximum number of tags allowed
+    :param maxTags: Maximum number of tags allowed maxtags = -1 for unlimited entries
     :param suggestions: (List) List of possible suggestions
     :param label: (Str) Label of the Function
     :param text: (Str) Instructions for entry
