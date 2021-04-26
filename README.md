@@ -89,11 +89,14 @@ def st_tags_sidebar(value: list,
 - Usage also supports `keywords = st_tags_sidebar()`
 ## Example Usage
 ```python 
-keywords = st_tags(label='# Enter Keywords:',
-                   text='Press enter to add more',
-                   value=['Zero', 'One', 'Two'],
-                   suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-                   key='1')
+keywords = st_tags(
+    label='# Enter Keywords:',
+    text='Press enter to add more',
+    value=['Zero', 'One', 'Two'],
+    suggestions=['five', 'six', 'seven', 
+                 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+    maxtags = 4
+    key='1')
                    
 keyword = st_tags_sidebar(
 label='# Enter Keywords:',
