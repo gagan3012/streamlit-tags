@@ -15,7 +15,7 @@ def readme() -> str:
 
 setuptools.setup(
     name="streamlit_tags",
-    version="1.1.7",
+    version="1.1.8",
     author="Gagan Bhatia",
     author_email="gbhatia880@gmail.com",
     description="Tags custom component for Streamlit",

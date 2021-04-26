@@ -97,7 +97,9 @@ def st_tags_sidebar(value: list = [],
 
     with st.sidebar:
         st.sidebar.write(label)
-        component_value = _component_func(label=label, text=text, initialValue=value, suggestions=suggestions, key=key,
+        component_value = _component_func(label=label,
+                                          text=text,
+                                          initialValue=value, suggestions=suggestions, key=key,
                                           default=value)
         return component_value
 
