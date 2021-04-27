@@ -3,6 +3,7 @@
 [![conda Version](https://img.shields.io/conda/vn/gagan3012/streamlit-tags.svg?style=flat-square&logo=conda-forge&logoColor=white)](https://anaconda.org/gagan3012/streamlit-tags)
 [![Downloads](https://static.pepy.tech/personalized-badge/streamlit-tags?period=total&units=none&left_color=grey&right_color=orange&left_text=Pip%20Downloads)](https://pepy.tech/project/streamlit-tags)
 [![Conda downloads](https://img.shields.io/conda/dn/gagan3012/streamlit-tags?label=conda%20downloads)](https://anaconda.orggagan3012/streamlit-tags)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
 
 ![streamlit-tags](https://socialify.git.ci/gagan3012/streamlit-tags/image?descriptionEditable=Tags%20in%20Streamlit&language=1&logo=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1366779897423810562%2Fkn7ucNPv.png&owner=1&stargazers=1&theme=Light)
 
