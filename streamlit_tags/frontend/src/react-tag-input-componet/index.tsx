@@ -63,7 +63,7 @@ const RTIInput = css({
   outline: 0,
   fontSize: "inherit",
   lineHeight: "inherit",
-  width: "100%",
+  width: "200%",
 });
 
 const defaultSeprators = ["Enter"];
