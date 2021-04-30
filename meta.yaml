@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/81/86/fce560ca1e3f8b76131f4d900f0a46b001580fb7749d4a6829ccd0f3dd2c/streamlit_tags-1.2.1.tar.gz
+  url: https://files.pythonhosted.org/packages/81/86/fce560ca1e3f8b76131f4d900f0a46b001580fb7749d4a6829ccd0f3dd2c/streamlit-tags-1.2.1.tar.gz
   sha256: 4c29d971c78792a957f7107d0da66e1f697fb4a948b4ec6e97df7c60e6db321c
 
 build:
