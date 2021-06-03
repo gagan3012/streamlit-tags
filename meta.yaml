@@ -1,24 +1,35 @@
-{% set version = "1.2.1" %}
+{% set name = "streamlit_tags" %}
+{% set version = "1.2.4" %}
+
 
 package:
-  name: streamlit-tags
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/81/86/fce560ca1e3f8b76131f4d900f0a46b001580fb7749d4a6829ccd0f3dd2c/streamlit-tags-1.2.1.tar.gz
-  sha256: 4c29d971c78792a957f7107d0da66e1f697fb4a948b4ec6e97df7c60e6db321c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/streamlit_tags-{{ version }}.tar.gz
+  sha256: 0e337c1f08d825f793e58d09ea6ccb72d36e2511c863f519d48d051779e728e4
 
 build:
-  noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
     - pip
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
+    - streamlit ==0.81.1
+
+test:
+  imports:
+    - streamlit_tags
+  commands:
+    - pip check
+  requires:
+    - pip
 
 
 about:
@@ -29,4 +40,4 @@ about:
     Tags custom component for Streamlit
   dev_url: https://github.com/gagan3012/streamlit-tags
   doc_url: https://pypi.org/project/streamlit-tags
-  license_file: LICENSE
+  license_file: LICENSE.txt
