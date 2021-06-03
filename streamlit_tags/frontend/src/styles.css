@@ -26,7 +26,6 @@ button{
 }
 .rti--input {
     background-color: var(--secondary-background-color);
-    color: var(--text-color);
 }
 .rah-hint{
     color: var(--text-color) !important;
