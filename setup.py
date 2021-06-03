@@ -15,7 +15,7 @@ def readme() -> str:
 
 setuptools.setup(
     name="streamlit_tags",
-    version="1.2.4",
+    version="1.2.5",
     author="Gagan Bhatia",
     license='MIT',
     author_email="gbhatia880@gmail.com",
