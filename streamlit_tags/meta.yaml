@@ -35,7 +35,7 @@ about:
   home: https://github.com/gagan3012/streamlit-tags
   summary: Tags custom component for Streamlit
   license: MIT
-  license_file: PLEASE_ADD_LICENSE_FILE
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
