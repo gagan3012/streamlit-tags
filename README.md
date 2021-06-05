@@ -32,7 +32,7 @@ The installation can also be found on [**PyPi**](https://pypi.org/project/stream
 ```
 conda install -c conda-forge streamlit_tags
 ```
-The installation can also be found on [**Anaconda**](https://anaconda.org/gagan3012/streamlit-tags) 
+The installation can also be found on [**Anaconda**](https://anaconda.org/conda-forge/streamlit_tags) 
 ## Usage
 This library has two main functions to display and use tags:
 - `st_tags` to display the tags feature
