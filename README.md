@@ -30,7 +30,7 @@ pip install streamlit-tags
 The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/) 
 ### Anaconda
 ```
-conda install -c conda-forge streamlit-tags
+conda install -c conda-forge streamlit_tags
 ```
 The installation can also be found on [**Anaconda**](https://anaconda.org/gagan3012/streamlit-tags) 
 ## Usage
