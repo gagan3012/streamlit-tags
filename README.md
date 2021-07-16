@@ -2,7 +2,7 @@
 [![pypi Version](https://img.shields.io/pypi/v/streamlit-tags.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/streamlit-tags/)
 [![conda Version](https://img.shields.io/conda/vn/conda-forge/streamlit_tags.svg?style=flat-square&logo=conda-forge&logoColor=white)](https://anaconda.org/conda-forge/streamlit_tags)
 [![Downloads](https://static.pepy.tech/personalized-badge/streamlit-tags?period=total&units=none&left_color=grey&right_color=orange&left_text=Pip%20Downloads)](https://pepy.tech/project/streamlit-tags)
-[![Conda downloads](https://img.shields.io/conda/dn/gagan3012/streamlit-tags?label=conda%20downloads)](https://anaconda.org/gagan3012/streamlit-tags)
+[![Conda downloads](https://img.shields.io/conda/dn/conda-forge/streamlit_tags?label=conda%20downloads)](https://anaconda.org/gagan3012/streamlit-tags)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
 [![Documentation Status](https://readthedocs.org/projects/streamlit-tags/badge/?version=latest)](https://streamlit-tags.readthedocs.io/en/latest/)
 
