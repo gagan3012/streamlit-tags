@@ -20,7 +20,6 @@ keywords = st_tags(
     value=['Zero', 'One', 'Two'],
     suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
     maxtags=maxtags,
-    key='1')
 
 st.write("### Results:")
 st.write(keywords)
