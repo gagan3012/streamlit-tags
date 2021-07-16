@@ -20,7 +20,7 @@ keywords = st_tags(
     value=['Zero', 'One', 'Two'],
     suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
     maxtags=maxtags,
-    key=1)
+    key="1")
 
 st.write("### Results:")
 st.write(keywords)
@@ -45,7 +45,7 @@ keyword = st_tags_sidebar(label='# Enter Keywords:',
                           value=['Zero', 'One', 'Two'],
                           suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
                           maxtags=maxtags_sidebar,
-                          key=2)
+                          key="2")
 
 st.sidebar.write("### Results:")
 st.sidebar.write(keyword)
