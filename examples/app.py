@@ -45,7 +45,6 @@ keyword = st_tags_sidebar(label='# Enter Keywords:',
                           value=['Zero', 'One', 'Two'],
                           suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
                           maxtags=maxtags_sidebar,
-                          key='2')
 
 st.sidebar.write("### Results:")
 st.sidebar.write(keyword)
