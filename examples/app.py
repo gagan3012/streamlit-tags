@@ -37,6 +37,7 @@ suggestions=['five', 'six', 'seven',
 maxtags = 4)''',
                 language="python")
 
+maxtags_sidebar = st.sidebar.slider('Number of tags allowed?', 1, 10, 3, key='ehikwegrjifbwreuk')
 
 
 keyword = st_tags_sidebar(label='# Enter Keywords:',
