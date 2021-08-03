@@ -23,6 +23,7 @@ keywords = st_tags(
     key="aljnf")
 
 st.write("### Results:")
+st.write(type(keywords))
 
 st.sidebar.write("# Code for streamlit tags sidebar")
 
