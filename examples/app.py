@@ -23,7 +23,6 @@ keywords = st_tags(
     key="aljnf")
 
 st.write("### Results:")
-st.write(keywords)
 
 st.sidebar.write("# Code for streamlit tags sidebar")
 
@@ -48,4 +47,4 @@ keyword = st_tags_sidebar(label='# Enter Keywords:',
                           key="afrfae")
 
 st.sidebar.write("### Results:")
-st.sidebar.write(keyword)
+st.sidebar.write((keyword))
