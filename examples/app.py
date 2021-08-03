@@ -12,6 +12,7 @@ st.code(body='''keywords = st_tags(
     key='1')''',
         language="python")
 
+maxtags = st.slider('Number of tags allowed?', 1, 10, 3, key='jfnkerrnfvikwqejn')
 
 keywords = st_tags(
     label='# Enter Keywords:',
