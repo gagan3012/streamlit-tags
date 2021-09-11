@@ -118,4 +118,3 @@ keyword = st_tags_sidebar(
 ## Sample Images of the UI:
 [![UI](https://user-images.githubusercontent.com/49101362/113942909-59494100-980a-11eb-8f4c-662f5c18d967.png)](https://share.streamlit.io/gagan3012/streamlit-tags/examples/app.py)
 
-## We hit 10000 downloads!! 
