@@ -15,7 +15,7 @@ st.code(body='''keywords = st_tags(
 maxtags = st.slider('Number of tags allowed?', 1, 10, 3, key='jfnkerrnfvikwqejn')
 
 keywords = st_tags(
-    label='# Enter Keywords:',
+    label='Enter Keywords:',
     text='Press enter to add more',
     value=['Zero', 'One', 'Two'],
     suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],

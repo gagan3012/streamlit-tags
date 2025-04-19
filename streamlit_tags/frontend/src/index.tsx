@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Custom_keywords from "./keywords"
+import CustomKeywords from "./keywords"
 
 // Lots of import to define a Styletron engine and load the light theme of baseui
 // @ts-ignore
@@ -15,7 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <StyletronProvider value={engine}>
       <ThemeProvider theme={LightTheme}>
-        <Custom_keywords />
+        <CustomKeywords />
       </ThemeProvider>
     </StyletronProvider>
   </React.StrictMode>,

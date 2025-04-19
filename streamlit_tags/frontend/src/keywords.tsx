@@ -11,7 +11,7 @@ interface PythonArgs {
   maxTags: number
 }
 
-const Custom_keywords = (props: ComponentProps) => {
+const CustomKeywords = (props: ComponentProps) => {
   // Destructure using Typescript interface
   // This ensures typing validation for received props from Python
   let { label, text, initialValue, suggestions, maxTags}: PythonArgs = props.args
@@ -36,4 +36,4 @@ const Custom_keywords = (props: ComponentProps) => {
   )
 }
 
-export default withStreamlitConnection(Custom_keywords)
+export default withStreamlitConnection(CustomKeywords)
