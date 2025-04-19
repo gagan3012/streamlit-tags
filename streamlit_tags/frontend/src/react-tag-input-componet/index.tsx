@@ -31,7 +31,7 @@ setup(React.createElement);
 const RTIContainer = css({
   "--rtiBg": "#fff",
   "--rtiBorder": "#ccc",
-  "--rtiMain": "#3182ce",
+  "--rtiMain": "var(--primary-color)",
   "--rtiRadius": "0.375rem",
   "--rtiS": "0.5rem",
   "--rtiTag": "#edf2f7",
@@ -43,18 +43,18 @@ const RTIContainer = css({
   },
 
   alignItems: "center",
-  bg: "var(--rti-bg)",
-  border: "1px solid var(--rti-border)",
-  borderRadius: "var(--rti-radius)",
+  bg: "var(--rtiBg)",
+  border: "1px solid var(--rtiBorder)",
+  borderRadius: "var(--rtiRadius)",
   display: "flex",
   flexWrap: "wrap",
-  gap: "var(--rti-s)",
+  gap: "var(--rtiS)",
   lineHeight: 1.4,
-  padding: "var(--rti-s)",
+  padding: "var(--rtiS)",
 
   "&:focus-within": {
-    borderColor: "var(--rti-main)",
-    boxShadow: "var(--rti-main) 0px 0px 0px 1px",
+    borderColor: "var(--rtiMain)",
+    boxShadow: "var(--rtiMain) 0px 0px 0px 1px",
   },
 });
 

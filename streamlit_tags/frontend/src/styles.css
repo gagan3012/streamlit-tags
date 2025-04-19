@@ -4,9 +4,10 @@ html {
 
 .rti--container {
   max-width: inherit;
-  --rti-tag: var(--primary-color) !important;
+  --rtiTag: var(--primary-color) !important;
   background-color: var(--secondary-background-color);
   font: var(--font);
+  line-height: 1.4;
 }
 body{
     color: var(--text-color);

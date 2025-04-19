@@ -9,11 +9,11 @@ interface TagProps {
 
 const tagStyles = css({
   alignItems: "center",
-  background: "var(--rti-tag)",
-  borderRadius: "var(--rti-radius)",
+  background: "var(--rtiTag)",
+  borderRadius: "var(--rtiRadius)",
   display: "inline-flex",
   justifyContent: "center",
-  paddingLeft: "var(--rti-s)",
+  paddingLeft: "var(--rtiS)",
 
   button: {
     background: "none",
@@ -21,7 +21,7 @@ const tagStyles = css({
     borderRadius: "50%",
     cursor: "pointer",
     lineHeight: "inherit",
-    padding: "0 var(--rti-s)",
+    padding: "0 var(--rtiS)",
 
     "&:hover": {
       color: "var(--rti-tag-remove)",
